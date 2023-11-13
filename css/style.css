@@ -1,0 +1,12 @@
+:root {
+    font-size: 62.5 %;
+}
+
+html {
+    font-size: 1.6rem;
+}
+
+body {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+}
