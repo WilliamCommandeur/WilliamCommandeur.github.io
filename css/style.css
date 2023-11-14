@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Lato&family=Orbitron:wght@700&family=Oswald:wght@300;700&family=Poppins:wght@400;700&family=Rajdhani:wght@300;400;700&family=Roboto:wght@300;400&family=Sora:wght@400;700&display=swap');
+
 :root {
-    font-size: 62.5 %;
+    font-size: 62.5%;
 }
 
 html {
@@ -7,6 +9,35 @@ html {
 }
 
 body {
-    background-image: url('/images/background.jpg');
+    color: white;
+    background-image: url("../images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg");
     background-size: cover;
+    display: flex;
+    max-height: 100vh;
+    font-family: 'Rajdhani';
 }
+
+main {
+    display: flex;    
+}
+h1 {
+    font-size: 12rem;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    line-height: 7rem;
+    padding-left: 3rem;
+}
+header span {
+    order: -1;
+    font-size: 4rem;
+    padding-left: 3rem;
+}
+nav {
+    display: flex;
+    height: 10%;
+}
+
