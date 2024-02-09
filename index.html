@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="data:image" type="image/x-icon">
     <title>Mon portfolio</title>
 </head>
-<body>
-    <script src="./js/app.js"></script>
-    <header>
-        <h1>Fullstack Developer
-            <span>William Commandeur</span>
-        </h1>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
-        <footer>
-            <a href="https://github.com/WilliamCommandeur"><img src="./images/github.png" alt="Logo Github"></a>
-            <a href="mailto:william.commandeur@gmail.com"><img src="./images/mail.png" alt="Logo eMail"></a>
-        </footer>
+<body class="background w-screen h-screen flex flex-col p-2">
+    <header class="border-b-2 pb-2">
+        <ul class="primary flex justify-around">
+            <li class=""><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
     </header>
-    <main>
-        <div class="menu">
-            TODO
-        </div>
-</main>
+
+    <div class=" w-screen h-screen flex flex-col justify-around items-center relative" id="closing">
+        
+            <h1 class="text-4xl secundary">Hi, I'm <span>William Commandeur!</span> Welcome on my <span>page</span></h1>
+            <div class="flex-col text-center">
+                <p class="text-white">Click here to find more</p>
+                <button class="bg-red-500 border-solid rounded" id="closing-button">+</button>
+            </div>
+        
+    </div>
+
+    <footer class="border-t-2 pt-2">
+        <ul class="flex justify-around text-white">
+            <li><a href="https://github.com/WilliamCommandeur"><img src="./images/github-142-svgrepo-com.svg" alt="Logo de GitHub"></a></li>
+            <li><a href="mailto:william.commandeur@gmail.com"><img src="/images/mail-alt-svgrepo-com.svg" alt="Icone d'email"></a></li>
+            <li><a href="https://www.linkedin.com/in/william-commandeur/"><img src="/images/linkedin-svgrepo-com(1).svg" alt="Logo de LinkedIn"></a></li>
+        </ul>
+    </footer>
+    <script src="./js/app.js" defer></script>
 </body>
 </html>
