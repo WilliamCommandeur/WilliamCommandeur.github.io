@@ -5,7 +5,7 @@
 }
 
 img {
-	width: 10vw;
+	width: 2rem;
 }
 
 body {
@@ -18,16 +18,17 @@ header, footer {
 
 .background {
 	background-color: var(--backgound-color);
-};
+}
 
 .primary {
 	color: var(--primary-color)
-};
+}
 
 .secundary {
 	color: var(--secundary-color);
 }
 
-h1 span {
-	color: var(--secundary-color)
+.button {
+	border-color: var(--secundary-color);
 }
+
