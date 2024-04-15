@@ -1,23 +1,24 @@
 :root{
-	--backgound-color: #001233;
-	--primary-color: #CAC0B3;
-	--secundary-color: #FF595A;
+	--background-color: #333333;
+	--primary-color: #26A69A;
+	--secundary-color: #FF7043;
 }
 
-img {
+footer img {
 	width: 2rem;
 }
 
 body {
 	color: var(--primary-color);
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header, footer {
-	border-color: var(--secundary-color);
+	border-color: var(--background-color);
 }
 
 .background {
-	background-color: var(--backgound-color);
+	background-color: var(--background-color);
 }
 
 .primary {
