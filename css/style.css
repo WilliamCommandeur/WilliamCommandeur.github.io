@@ -1,7 +1,9 @@
+
+
 :root{
-	--backgound-color: #001233;
-	--primary-color: #CAC0B3;
-	--secundary-color: #FF595A;
+	--backgound-color: #faf3d3;
+	--primary-color: #144daa;
+	--secundary-color: #CAC0B3;
 }
 
 img {
@@ -28,6 +30,16 @@ header, footer {
 	color: var(--secundary-color);
 }
 
+h1 {
+	font-family: 'alex_brushregular', sans-serif;
+	font-weight: bold;
+}
+
 h1 span {
-	color: var(--secundary-color)
+	color: var(--secundary-color);
+}
+
+#fade-content {
+	opacity: 0;
+  	transition: opacity 2s ease-in-out;
 }
