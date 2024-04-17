@@ -9,24 +9,28 @@
     <link rel="shortcut icon" href="data:image" type="image/x-icon">
     <title>Mon portfolio</title>
 </head>
-<body class="background w-screen h-screen flex flex-col p-2">
+<body class="background w-full h-screen flex overflow-hidden flex-col p-2">
     <header class="border-b-2 pb-2">
         <ul class="primary flex justify-around">
             <li class=""><a href="/">About</a></li>
             <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
     </header>
 
-    <div id="fade-content" class=" w-screen h-screen flex flex-col justify-around items-center relative">
-        
-            <h1 class="text-4xl secundary">Hi, I'm <span>William Commandeur!</span>, I build things for the Web</h1> 
-            <p class="text-4xl secundary">Welcome on my <span>page</span></p>
-            <div class="flex-col text-center">
-                <p>Fullstack Developer</p>
+    <main class=" w-screen h-screen flex flex-col justify-around items-center relative">
+            <div class="text-2xl md:text-3xl ">
+                <h1 class="md:text-4xl">Hi, I'm <span class="secundary">William Commandeur!</span></h1>
+                <p>Welcome on my page !</p>
+                <p>I'm a <span class="secundary">fullstack developer,</span></p>
+                <p>I build things for the <span class="secundary">Web.</span></p>
             </div>
+            <div class="w-1/3">
+                <img src="/images/Devices-cuate.svg" alt="Illustration developpeur web">
+            </div>
+            <button class="button background border-2 p-2 rounded-xl">My latest project</button>
         
-    </div>
+        </main>
 
     <footer class="border-t-2 pt-2">
         <ul class="flex justify-around text-white">

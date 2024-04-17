@@ -1,30 +1,31 @@
 
 
 :root{
-	--backgound-color: #faf3d3;
-	--primary-color: #144daa;
-	--secundary-color: #CAC0B3;
+	--background-color: #333333;
+	--primary-color: #26A69A;
+	--secundary-color: #FF7043;
 }
 
-img {
-	width: 10vw;
+footer img {
+	width: 2rem;
 }
 
 body {
 	color: var(--primary-color);
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header, footer {
-	border-color: var(--secundary-color);
+	border-color: var(--background-color);
 }
 
 .background {
-	background-color: var(--backgound-color);
-};
+	background-color: var(--background-color);
+}
 
 .primary {
 	color: var(--primary-color)
-};
+}
 
 .secundary {
 	color: var(--secundary-color);
@@ -35,11 +36,7 @@ h1 {
 	font-weight: bold;
 }
 
-h1 span {
-	color: var(--secundary-color);
+.button {
+	border-color: var(--secundary-color);
 }
 
-#fade-content {
-	opacity: 0;
-  	transition: opacity 2s ease-in-out;
-}
