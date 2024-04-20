@@ -14,8 +14,9 @@ body {
 	color: var(--primary-color);
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	background-color: var(--background-color);
-	width: 100vw;
-	height: 100vh;
+	width: auto;
+	height: auto;
+	max-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 0.5rem;
@@ -77,7 +78,10 @@ header, footer {
 }
 
 .content__text {
-	font-size: 2rem;
+	font-size: 1.5rem;
+	margin-top: 5rem;;
+	width: 30%;
+	text-align: justify;
 	> span {
 		color: var(--secundary-color);
 	}
@@ -100,4 +104,20 @@ header, footer {
 .footer__list {
 	display: flex;
 	justify-content: space-around;
+}
+
+.header__menu a:hover {
+	color: var(--secundary-color);
+}
+
+svg:hover #Dribbble-Light-Preview {
+	fill: var(--secundary-color)
+}
+
+svg:hover #path-email-icon {
+	stroke: var(--secundary-color);
+}
+
+#linkedin-icon:hover path {
+	fill: var(--secundary-color)
 }
