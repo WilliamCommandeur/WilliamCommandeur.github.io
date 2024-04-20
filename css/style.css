@@ -16,10 +16,10 @@ body {
 	background-color: var(--background-color);
 	width: auto;
 	height: auto;
-	max-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 0.5rem;
+	min-height: 100vh;
 }
 
 .header {
@@ -47,7 +47,7 @@ header, footer {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	flex-grow: 1;
 }
 
 .main__title {
@@ -77,20 +77,44 @@ header, footer {
 	justify-content: space-around;
 }
 
+.content div {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+}
+
 .content__text {
 	font-size: 1.5rem;
 	margin-top: 5rem;;
-	width: 30%;
 	text-align: justify;
 	> span {
 		color: var(--secundary-color);
 	}
 }
 
+.content__button {
+	margin-top: 4rem;
+	border: 1px solid var(--primary-color);
+	min-width: 50%;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	font-family: "Bebas Neue", sans-serif;
+  	font-weight: 600;
+	font-size: 2rem;	
+}
+
+.content__button:hover {
+	background-color: var(--secundary-color);
+	border-color: var(--secundary-color);
+}
 
 .content__image {
 	width: 50%;
-}
+} 
 
 .button {
 	border-color: var(--secundary-color);
@@ -98,7 +122,8 @@ header, footer {
 
 .footer {
 	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.2rem;
+	bottom: 0px;
 }
 
 .footer__list {
@@ -120,4 +145,58 @@ svg:hover #path-email-icon {
 
 #linkedin-icon:hover path {
 	fill: var(--secundary-color)
+}
+
+/* Media query pour les écrans de téléphone */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0.2rem;
+    }
+
+    .header__menu {
+        font-size: 1.2rem;
+    }
+
+    .title-container {
+        margin-left: 2rem;
+    }
+
+    .main__title {
+        font-size: 4.5rem;
+    }
+
+    .main__subtitle {
+        font-size: 2.2rem;
+        margin-left: 0;
+		margin-top: 0.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+		align-items: center;
+    }
+
+	.content div {
+		width: 80%;
+	}
+
+    .content__text {
+        font-size: 1.2rem;
+        margin-top: 3rem; 
+    }
+
+    .content__button {
+        font-size: 1.5rem;
+        min-width: 80%;
+    }
+
+    .content__image {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 0.2rem;
+        padding-bottom: 0.1rem;
+    }
 }
