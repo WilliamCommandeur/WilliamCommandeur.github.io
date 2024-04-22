@@ -13,6 +13,7 @@ a {
 
 ul, ol {
     list-style: none;
+    padding: 0;
 }
 
 footer img {
@@ -119,5 +120,16 @@ svg:hover #path-email-icon {
     .footer {
         padding-top: 0.2rem;
         padding-bottom: 0.1rem;
+    }
+
+    #svg-will {
+        display: none;
+    }
+
+    .main__text {
+        width: 90%;
+        text-align: justify;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 }
