@@ -6,6 +6,15 @@
 	--secundary-color: #FF7043;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
 footer img {
 	width: 2rem;
 }
@@ -154,7 +163,7 @@ svg:hover #path-email-icon {
 	border-radius: 100%;
 }
 
-/* Media query pour les écrans de téléphone */
+/********** MEDIA QUERY **********/
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;

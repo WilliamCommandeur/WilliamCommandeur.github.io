@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="data:image" type="image/x-icon">
     <title>William Commandeur</title>
 </head>
 <body>
     <header class="header">
-        <ul class="header__menu">
+        <ul class="header__menu animate-light">
             <li><a href="/about.html">About</a></li>
             <li><a href="/projects.html">Projects</a></li>
             <li><a href="/contact.html">Contact</a></li>
@@ -20,10 +22,10 @@
 
     <main class="main">
             <div class="title-container">
-                <h1 class="main__title">Welcome on my page !</h1>
-                <p class="main__subtitle">Hi, I'm <span>William Commandeur!</span></h1>
+                <h1 class="main__title  animate-on-load-second">Welcome on my page !</h1>
+                <p class="main__subtitle animate-on-load-first">Hi, I'm <span>William Commandeur!</span></h1>
             </div>
-            <div class="content">
+            <div class="content animate-on-load-third">
                 <div>
                     <p class="content__text">I'm a <span>fullstack developer,</span>
                         passionate by building modern <span>web applications.</span>
@@ -36,8 +38,8 @@
         </main>
 
     <footer class="footer">
-        <ul class="footer__list">
-            <li><a href="https://github.com/WilliamCommandeur"><svg width="32px" height="32px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <ul class="footer__list animate-light">
+            <li class="animate-on-load"><a href="https://github.com/WilliamCommandeur"><svg width="32px" height="32px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
                 <title>github [#142]</title>
                 <desc>Created with Sketch.</desc>
