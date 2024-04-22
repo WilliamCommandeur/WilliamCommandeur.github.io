@@ -147,6 +147,13 @@ svg:hover #path-email-icon {
 	fill: var(--secundary-color)
 }
 
+#svg-will {
+	height: 15rem;
+	border: 1px solid var(--secundary-color);
+	width: 15rem;
+	border-radius: 100%;
+}
+
 /* Media query pour les écrans de téléphone */
 @media only screen and (max-width: 768px) {
     body {
