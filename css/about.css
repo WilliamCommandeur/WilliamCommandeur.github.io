@@ -16,6 +16,13 @@ ul, ol {
     padding: 0;
 }
 
+li {
+	font-family: "Bebas Neue", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 2rem;
+}
+
 footer img {
 	width: 2rem;
 }
@@ -58,7 +65,10 @@ header, footer {
 }
 
 .title-container {
-	margin-left: 5rem;;
+	margin-left: 5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
 }
 
 .main__title {
@@ -67,9 +77,13 @@ header, footer {
   	font-style: normal;
 	font-size: 8rem;
 	line-height: 1;
+    z-index: 1;
+    background-color: #333333;
+    padding-right: 1.5rem;
     > span {
         color: var(--secundary-color);
     }
+    
 }
 
 .main__container {
@@ -107,7 +121,7 @@ header, footer {
 	color: var(--secundary-color);
 }
 
-svg:hover #Dribbble-Light-Preview {
+svg:hover #github-svg {
 	fill: var(--secundary-color)
 }
 

@@ -34,6 +34,16 @@
     }
 }
 
+@keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
 /********** ANIMATIONS **********/
 .animate-on-load-second {
     opacity: 0;
@@ -50,7 +60,20 @@
     transition: opacity 0.8s ease-in-out;
 }
 
-.animate-light {
+.animate-on-load-fourth {
+	opacity: 0;
+	transition: opacity 0.8s ease-in-out;
+}
+
+.animate-on-load-fifth {
     opacity: 0;
-    animation: flicker 0.8s ease-in-out 3s;
+    transition: opacity 0.8s ease-in-out;
+}
+.line-animation {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #FF7043;
+    animation: drawLine 5s ease forwards;
 }

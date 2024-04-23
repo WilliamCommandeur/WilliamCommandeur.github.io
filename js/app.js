@@ -1,7 +1,9 @@
 const animations = [
   { selector: '.animate-on-load-first', delay: 500 },
   { selector: '.animate-on-load-second', delay: 1200 },
-  { selector: '.animate-on-load-third', delay: 1900 }
+  { selector: '.animate-on-load-third', delay: 1900 },
+  { selector: '.animate-on-load-fourth', delay: 2600 },
+  { selector: '.animate-on-load-fifth', delay: 3300},
 ];
 
 function applyAnimation(selector, delay) {
@@ -20,11 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     applyAnimation(animation.selector, animation.delay);
   });
   
-  const flashingElements = document.querySelectorAll('.animate-light');
-  flashingElements.forEach(function(element) {
-    setTimeout(function() {
-        element.style.opacity = '1';
-    }, 4000); 
-  });
+  setTimeout(function() {
+        document.querySelector('#line').classList.add('line-animation');
+    }, 1200);
 
 });
