@@ -13,7 +13,7 @@ a {
 
 ul, ol {
     list-style: none;
-    padding: 0;
+	padding: 0;
 }
 
 footer img {
@@ -34,6 +34,7 @@ body {
 
 .header {
 	border-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 header, footer {
@@ -53,43 +54,6 @@ header, footer {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-.title-container {
-	margin-left: 5rem;;
-}
-
-.main__title {
-	font-family: "Bebas Neue", sans-serif;
-  	font-weight: 400;
-  	font-style: normal;
-	font-size: 8rem;
-	line-height: 1;
-    > span {
-        color: var(--secundary-color);
-    }
-}
-
-.main__container {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.main__text {
-    width: 100%;
-    max-width: 800px;
-    font-size: 1.2rem;
-    > span {
-        color: var(--secundary-color);
-    }
-    padding: 1.5rem;
-    border-radius: 2rem;
-    background-color: rgba(68, 68, 75, 0.486);
 }
 
 .footer {
@@ -119,52 +83,19 @@ svg:hover #path-email-icon {
 	fill: var(--secundary-color)
 }
 
-#svg-will {
-    height: 30%;
-    width: 30%;
-    /* border: 1px solid var(--secundary-color);
-    border-radius: 100%; */
-}
-
-/* Media query pour les écrans de téléphone */
+/********** MEDIA QUERY **********/
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
         padding: 0.2rem;
     }
 
-    .main {
-        padding: 0;
-    }
-
     .header__menu {
         font-size: 1.2rem;
-    }
-
-    .title-container {
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .main__title {
-        font-size: 4.5rem;
     }
 
     .footer {
         padding-top: 0.2rem;
         padding-bottom: 0.1rem;
     }
-
-    #svg-will {
-        display: none;
-    }
-
-    .main__text {
-        width: 90%;
-        text-align: justify;
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        padding: 0.8rem;
-    }
-
 }
