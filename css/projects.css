@@ -343,6 +343,29 @@ svg:hover #path-email-icon {
         padding-bottom: 1rem;
     }
 
+    .card__image {
+        height: 150px;
+    }
+
+    .modal-content {
+        width: 95%;
+        z-index: 2;
+        margin: 30% auto; 
+    }
+
+    .resources__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource__item {
+        margin-top: 1rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        z-index: 1;
+    }
+
     .content__card:focus .button__container {
         transform: translateY(0);
         -webkit-transform: translateY(0);
