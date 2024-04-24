@@ -1,7 +1,6 @@
-// Sélectionnez tous les boutons avec la classe '.view-details-button'
+
 const viewDetailsButtons = document.querySelectorAll('.view-details-button');
 
-// Ajoutez un écouteur d'événement à chaque bouton
 viewDetailsButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modalTargetId = button.getAttribute('data-modal-target');
@@ -13,7 +12,6 @@ viewDetailsButtons.forEach(button => {
     });
 });
 
-// Ajoutez un écouteur d'événement pour le bouton de fermeture dans chaque modal
 const closeButtons = document.querySelectorAll('.close-button');
 closeButtons.forEach(closeButton => {
     closeButton.addEventListener('click', () => {
@@ -24,7 +22,6 @@ closeButtons.forEach(closeButton => {
     });
 });
 
-// Ajoutez un écouteur d'événement pour fermer la modal lors d'un clic en dehors de la modal
 window.addEventListener('click', (event) => {
     const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {

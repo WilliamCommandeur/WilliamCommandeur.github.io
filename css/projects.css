@@ -96,7 +96,7 @@ header, footer {
     padding: 1rem 1rem 0 1rem;
     border-radius: 2rem;
     width: 30%;
-    height: 80%;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -135,12 +135,14 @@ header, footer {
 }
 
 .modal-content {
+    position: relative;
     background-color: #3b3b3e;
-    margin: 15% auto;
+    margin: 7% auto;
     padding: 2rem;
     border: 1px solid #888;
     width: 60%;
     color:#26A69A;
+    overflow: auto;
 }
 
 .modal__title-container {
@@ -255,7 +257,6 @@ header, footer {
 	color: var(--secundary-color);
 }
 
-
 svg:hover #github-svg {
 	fill: var(--secundary-color)
 }
@@ -275,6 +276,33 @@ svg:hover #path-email-icon {
 #svg-web:hover #vector {
     fill: var(--secundary-color)
 }
+
+.swiper {
+    width: 85%;
+    height: 100%;
+    --swiper-navigation-size: 44px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: var(--secundary-color);
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--secundary-color);
+}
+
+.swiper-button-prev {
+    margin-left: 3rem;
+}
+
+.swiper-button-next {
+    margin-right: 3rem;
+}
+
+.swiper-wrapper {
+    margin-top: 2rem;
+    width: 50%;
+}
+
 
 /********** MEDIA QUERY **********/
 @media only screen and (max-width: 768px) {
@@ -317,6 +345,8 @@ svg:hover #path-email-icon {
 
     .content__card:focus .button__container {
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
     }
 
     .footer {
