@@ -116,12 +116,16 @@ svg:hover #path-email-icon {
         padding: 0.2rem;
     }
 
+	.header {
+        padding-bottom: 0.6rem;
+    }
+
     .header__menu {
         font-size: 1.2rem;
     }
 
     .footer {
-        padding-top: 0.2rem;
-        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.5rem;
     }
 }

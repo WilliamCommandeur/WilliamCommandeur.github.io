@@ -178,6 +178,10 @@ svg:hover #path-email-icon {
         padding: 0.2rem;
     }
 
+	.header {
+		padding-bottom: 0.2rem;
+	}
+
     .header__menu {
         font-size: 1.2rem;
     }
@@ -220,7 +224,47 @@ svg:hover #path-email-icon {
     }
 
     .footer {
-        padding-top: 0.2rem;
-        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.5rem;
     }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+	.main {
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.header {
+		margin-bottom: 0;
+	}
+
+	.title-container {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.main__title {
+		font-size: 6.5rem;
+	}
+
+	.main__subtitle {
+		text-align: left;
+	}
+
+	.content {
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content > div {
+		width: 100%;
+	}
+
+	.content__image {
+		order: -1;
+		margin-top: 3rem;
+	}
 }

@@ -147,6 +147,10 @@ svg:hover #path-email-icon {
         padding: 0.2rem;
     }
 
+    .header {
+        padding-bottom: 0.6rem;
+    }
+
     .main {
         padding: 0;
     }
@@ -156,8 +160,16 @@ svg:hover #path-email-icon {
     }
 
     .title-container {
+        flex-direction: column;
         margin-left: 2rem;
         margin-bottom: 1rem;
+        height: 40%;
+        margin-right: 2rem;
+    }
+
+    .line-animation {
+        margin-top: 2rem;
+        z-index: 1;
     }
 
     .main__title {
@@ -165,8 +177,8 @@ svg:hover #path-email-icon {
     }
 
     .footer {
-        padding-top: 0.2rem;
-        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.5rem;
     }
 
     #svg-will {
@@ -181,4 +193,23 @@ svg:hover #path-email-icon {
         padding: 0.8rem;
     }
 
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .header {
+		margin-bottom: 0;
+	}
+
+	.title-container {
+		margin-left: 1rem;
+		text-align: center;
+	}
+
+	.main__title {
+		font-size: 6.5rem;
+	}
+
+    #svg-will {
+        display: none;
+    }
 }
