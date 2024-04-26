@@ -385,10 +385,10 @@ svg:hover #path-email-icon {
 
     .swiper-pagination {
         display: block;
-        margin-bottom: 8rem;
         color: var(--secundary-color);
         --swiper-pagination-color: var(--secundary-color);
         z-index: 1;
+        position: relative;
     }
 
     .content__card:focus .button__container {
@@ -448,6 +448,10 @@ svg:hover #path-email-icon {
         z-index: 2;
         margin: 20% auto; 
     }
+}
 
-    
+@media only screen and (max-width: 384px) {
+    .line-animation {
+        display: none;
+    }
 }
